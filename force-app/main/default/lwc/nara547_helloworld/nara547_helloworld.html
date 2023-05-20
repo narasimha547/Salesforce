@@ -1,0 +1,50 @@
+<!--template>
+    <lightning-card title="Hello World">
+        <p class="blue-text" style="color:red;">Welome to LWC1</p>
+        <lightning-button label="Save" variant="base"></lightning-button>
+        <lightning-button label="Save" variant="brand"></lightning-button>
+        <lightning-button label="Save" variant="success"></lightning-button>
+        <lightning-button label="Save" variant="destructive"></lightning-button>
+        <lightning-button-menu tooltip="Dividers use default variant" alternative-text="Show menu">
+            <lightning-menu-item value="MenuItemOne" label="Menu Item One"></lightning-menu-item>
+            <lightning-menu-item value="MenuItemTwo" label="Menu Item Two"></lightning-menu-item>
+            <lightning-menu-divider></lightning-menu-divider>
+            <lightning-menu-item value="MenuItemThree" label="Menu Item Three"></lightning-menu-item>
+            <lightning-menu-divider></lightning-menu-divider>
+            <lightning-menu-item value="MenuItemFour" label="Menu Item Four"></lightning-menu-item>
+        </lightning-button-menu>
+        <lightning-avatar src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Gmail_icon_%282020%29.svg"></lightning-avatar>
+    </lightning-card>
+    
+</template-->
+
+<template>
+    <lightning-card>
+        <div class="slds-m-top_medium slds-m-bottom_x-large">
+            <h2 class="slds-text-heading_small slds-m-bottom_medium">
+                Button menus using <code>lightning-menu-divider</code> components. The <code>lightning-menu-divider</code> components use <code>standard</code> and <code>compact</code> variants.
+            </h2>
+
+            <!-- Simple -->
+            <div class="slds-p-around_medium lgc-bg">
+                <lightning-button-menu tooltip="Dividers use default variant" alternative-text="Show menu">
+                    <lightning-menu-item value="MenuItemOne" label="Menu Item One"></lightning-menu-item>
+                    <lightning-menu-item value="MenuItemTwo" label="Menu Item Two"></lightning-menu-item>
+                    <lightning-menu-divider></lightning-menu-divider>
+                    <lightning-menu-item value="MenuItemThree" label="Menu Item Three"></lightning-menu-item>
+                    <lightning-menu-divider></lightning-menu-divider>
+                    <lightning-menu-item value="MenuItemFour" label="Menu Item Four"></lightning-menu-item>
+                </lightning-button-menu>
+
+                <lightning-button-menu tooltip="Dividers use compact variant" alternative-text="Show menu" class="slds-m-left_xx-small">
+                    <lightning-menu-item value="MenuItemOne" label="Menu Item One"></lightning-menu-item>
+                    <lightning-menu-item value="MenuItemTwo" label="Menu Item Two"></lightning-menu-item>
+                    <lightning-menu-divider variant="compact"></lightning-menu-divider>
+                    <lightning-menu-item value="MenuItemThree" label="Menu Item Three"></lightning-menu-item>
+                    <lightning-menu-divider variant="compact"></lightning-menu-divider>
+                    <lightning-menu-item value="MenuItemFour" label="Menu Item Four"></lightning-menu-item>
+                </lightning-button-menu>
+            </div>
+        </div>
+    </lightning-card>
+</template>

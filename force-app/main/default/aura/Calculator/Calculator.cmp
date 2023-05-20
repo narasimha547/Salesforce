@@ -1,0 +1,26 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+    <aura:attribute name="Number" type="Integer" access="public" description="Enter number to do percentage" />
+    <aura:attribute name="Percentage" type="Integer" access="public"/>
+    <aura:attribute name="Result" type="Integer" access="public" default="10"/>
+    <aura:attribute name="ResultArr" type="String[]" access="public" default="['A','B','C']" />
+    <aura:attribute name="ResultList" type="List" access="public" default="['A','B','C']" />
+    <aura:attribute name="ResultSet" type="Set" access="public" default="['A','B','C']" />
+    <aura:attribute name="ResultMap" type="Map" access="public" default="{'a':'aa','b':'bb'}" />
+    <!--
+	public String Result ='10';
+	 -->
+    Array : {!v.ResultArr[0]}<br></br><br></br>
+    List : {!v.ResultList[1]}<br></br>
+    Set : {!v.ResultSet[2]}<br></br>
+    <!-- Map : {!v.ResultMap['a']}<br></br>-->
+    <lightning:card title="Calculator">
+        <p class="slds-p-horizontal_small">
+            <lightning:input type="Integer" name="Number" label="Enter Number" value="{!v.Number}"/>
+            <lightning:input type="Integer" name="Percentage" label="Enter Percentage"  value="{!v.Percentage}" format-style="percent"/>
+            
+            {!v.Percentage} % in {!v.Number} is {!div(mult(v.Number,v.Percentage),100)}
+        </p>
+    </lightning:card>
+    <lightning:input aura:id="PercentageID" value="{!v.Percentage}"/>
+    <lightning:button name="Componet value" label="Hello" onclick="{!c.doClick}"/>
+</aura:component>

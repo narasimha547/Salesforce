@@ -1,0 +1,22 @@
+<!--aura:component implements="flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+	<p class="slds-p-around_x-small" style="color:white;">
+        <span class="aas">Hello Narasimha</span>
+    </p>
+</aura:component-->
+
+
+
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+    <lightning:card footer="Card Footer" title="Hello">
+        <aura:set attribute="actions">
+            <lightning:button label="New"/>
+        </aura:set>
+        <p class="slds-p-horizontal_small">
+            Card Body (custom component)
+        </p>
+    </lightning:card>
+    <aura:import library="lightning:alert" property="LightningAlert" />
+    <lightning:button onclick="{! c.openAlert }" label="Open Alert"/>
+    
+    <force:canvasApp developerName="MyCanvasApp" namespacePrefix="myNamespace" />
+</aura:component>

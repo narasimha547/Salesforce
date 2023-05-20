@@ -1,0 +1,10 @@
+<template>
+    <lightning-card title="Create Account">
+        <div class="slds-p-around_medium">
+          <lightning-input label="Enter A value" value={aval} onchange={handleAvalChange}></lightning-input>
+          <lightning-input label="Enter B value" value={bval} onchange={handleBvalChange}></lightning-input>
+          <lightning-button variant="brand" label="Sum" onclick={addSum}></lightning-button>
+        </div>
+        {sumValue}
+      </lightning-card>
+</template>

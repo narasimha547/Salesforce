@@ -1,0 +1,15 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId" access="global">
+    <aura:attribute name="arg1" type="Integer" access="public" />
+    <aura:attribute name="arg2" type="Integer" access="public" />
+    <aura:attribute name="arg3" type="Integer" access="public" />
+	<lightning:card title="Calculator">
+        <lightning:input type="Integer" name="arg1" value="{!v.arg1}"/>
+        <lightning:input type="Integer" name="arg2" value="{!v.arg2}"/>
+        
+        <lightning:button variant="brand" name="add" label="Add" onclick="{!c.doAdd}"/>
+        <lightning:button variant="brand" name="sub" label="Sub" onclick="{!c.doSub}"/>
+        <lightning:button variant="brand" name="mul" label="Mul" onclick="{!c.doMul}"/>
+        <lightning:button variant="brand" name="div" label="Div" onclick="{!c.doDiv}"/>
+        <lightning:input type="Integer" name="arg3" value="{!v.arg3}"/>
+    </lightning:card>
+</aura:component>

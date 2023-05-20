@@ -1,0 +1,16 @@
+<apex:page sidebar="false" showHeader="false" standardController="Account">
+    <apex:form >
+        Account Name <apex:inputText value="{!account.name}"/>
+        
+        Account Status
+        <select>
+        <option> null</option>
+        <option> null</option>
+        <option> null</option>
+        <option> null</option>
+        </select>
+        status <apex:inputCheckbox value="{!account.name}"/>
+        Account Name <apex:inputFile value="{!account.name}"></apex:inputFile>
+    </apex:form>
+
+</apex:page>

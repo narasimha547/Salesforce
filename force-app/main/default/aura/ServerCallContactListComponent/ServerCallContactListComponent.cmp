@@ -1,0 +1,8 @@
+<aura:component controller="ServerCallContactList">
+    <aura:attribute name="contactList" type="contact[]"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doAction}"/>
+    
+    <aura:iteration items="{!v.contactList}" var="con">
+        	{!con.Name}
+    </aura:iteration>
+</aura:component>

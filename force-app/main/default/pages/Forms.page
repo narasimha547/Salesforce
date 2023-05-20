@@ -1,0 +1,20 @@
+<apex:page controller="TeacherController"  sidebar="false" showHeader="false">
+    <apex:form >
+        <apex:pageBlock >
+            <apex:outputText ><h4><center><br/><br/>{!WelcomeMessage}<br/><br/><br/></center></h4></apex:outputText>
+            <apex:pageBlockSection title="Basic Details">
+                <apex:outputLabel value="*First Name" for="FirstName"></apex:outputLabel>
+                
+            </apex:pageBlockSection>
+            <apex:pageBlockSection title="Personal Details">
+            
+            </apex:pageBlockSection>
+            <apex:pageBlockSection title="Contact Details">
+            
+            </apex:pageBlockSection>
+            <apex:pageBlockSection title="Family Details">
+            
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

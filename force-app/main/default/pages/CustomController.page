@@ -1,0 +1,8 @@
+<apex:page controller="CustomController" sidebar="false" showHeader="false">
+    <apex:form >
+        <apex:pageBlock >
+            <apex:inputField value="{!acct.Rating}" />
+            <apex:commandButton action="{!save}" value="Save"/>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>
