@@ -1,0 +1,7 @@
+<template>
+    <lightning-card title="LWC Datatable Example" icon-name="standard:account">
+        <lightning-datatable if:true={contacts.data} key-field="Id" data={contacts.data} columns={COLOUMNSSS} onsave={handleSave}>
+        </lightning-datatable>
+        <p if:false={contacts.data}> No data avaliable </p>
+    </lightning-card>
+</template>

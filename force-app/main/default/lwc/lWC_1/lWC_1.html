@@ -1,0 +1,17 @@
+<template>
+    <lightning-card  title="Hello">
+        <p class="slds-p-horizontal_small"  onclick={changesurname}>{name}</p>
+        <p slot="footer">Phone {phone}</p>
+        <!--lightning-button label="Add SurName"></lightning-button-->
+    </lightning-card>
+    <lightning-card>
+        <lightning-input type="text" name="a_value" onchange={aval} value={a}> </lightning-input>
+        <lightning-input type="text" name="b_value" onchange={bval} value={b}> </lightning-input>
+        Total = {res}
+        <lightning-button label="Addition" value="+" onclick={caluculate}></lightning-button>
+        <lightning-button label="Supraction" value="-" onclick={caluculate}></lightning-button>
+        <lightning-button label="Multiplication" value="*" onclick={caluculate}></lightning-button>
+        <lightning-button label="Division" value="/" onclick={caluculate}></lightning-button>
+        
+    </lightning-card>
+</template>

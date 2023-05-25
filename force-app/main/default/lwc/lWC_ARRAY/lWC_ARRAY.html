@@ -1,0 +1,23 @@
+<template>
+    First Way
+    <lightning-card>
+        <template for:each={cities} for:item=city>
+            <p key={city}>{city}</p>
+        </template>
+    </lightning-card>
+    
+    Secound Way 
+    <lightning-card>
+        <template iterator:item={cities}>
+            <p key={item.value}>{item.value}</p>
+        </template>
+    </lightning-card>
+
+    Json Cities iterator
+    <lightning-card>
+        <template iterator:item={json_cities}>
+            <p key={item.value}>{item.value.name} {item.value.phone} {item.value.email} </p>
+        </template>
+    </lightning-card>
+
+</template>
