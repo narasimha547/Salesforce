@@ -1,0 +1,28 @@
+<template>
+
+    <lightning-card title="Wire with property">
+        <lightning-input type="text" label="Account Name" onchange={getAccountName} value={searchKey}></lightning-input>
+        <template if:true={accountList.data}>
+            <template for:each={accountList.data} for:item="acc">
+                <p key={acc.Id}>{acc.Name}</p>
+            </template>
+        </template>
+        <template if:true={accountList.error}>
+            Something Went Wrong
+         </template>
+    </lightning-card>
+
+    <lightning-card  title="Wire with method">
+        <lightning-input type="text" label="Account Name" onchange={getAccountName1} value={searchKey1}></lightning-input>
+        
+        <template if:true={recordsList}>
+            <template for:each={recordsList} for:item="acc">
+                <p key={acc.Name}>{acc.Name}</p>
+            </template>
+        </template>
+
+        <template if:true={errorMsg}>
+            Something Went Wrong
+         </template>
+    </lightning-card>
+</template>
