@@ -1,0 +1,7 @@
+<template>
+    <lightning-card if:true={ListAcc.data}>
+        <template for:each={ListAcc.data} for:item="acc">
+            <p key={acc.Id}> Name : {acc.Name} </p>
+        </template>
+    </lightning-card>
+</template>

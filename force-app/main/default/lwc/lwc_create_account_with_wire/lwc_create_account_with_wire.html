@@ -1,0 +1,13 @@
+<template>
+    <lightning-card>
+        <lightning-input label="Account Name" type="text" onchange={setName}></lightning-input>
+        <lightning-input label="Account Phone" type="text" onchange={setPhone}></lightning-input>
+        <lightning-input label="Account Email" type="text" onchange={setEmail}></lightning-input>
+        <lightning-button label="Submit" onclick={saveAccount}></lightning-button>
+        <lightning-button label="Delete" onclick={deleteAccount}></lightning-button>
+
+    </lightning-card>
+    <lightning-record-view-form record-id={recordId} object-api-name="Account">
+        <lightning-input-field lang="Account Name" field-name="Name"></lightning-input-field>
+    </lightning-record-view-form>
+</template>
